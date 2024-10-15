@@ -3,7 +3,8 @@ html
     head 
         title='USERS'
         link(rel="stylesheet", href="style.css")
-        script(src='/myscript.js')
+        script(src="myscript.js")
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         body 
         h1='Users'
    
@@ -13,13 +14,25 @@ html
     h2  Email: #{data.emailaddress} 
     hr
 
-    form(role='form' method='POST' action='')
+    form(role='form' method='POST')
               div.form-group
                 label(for='name') Name:
                 input#name.form-control(type='text', placeholder='name' name='name')
               div.form-group
                 label(for='email') Email:
                 input#email.form-control(type='email', placeholder='name@email.com' name='email')
-              button.btn.btn-primary(type="submit") Change
+              button.btn.btn-primary(type="submit", name="asdf") Change
+              div.form-group
+                label(for='name') Address:
+                input#name.form-control(type='text', placeholder='address' name='address')
+              div.form-group
+                label(for='email') Payment:
+                input#email.form-control(type='email', placeholder='payment' name='payment')
+
+              button.btn.btn-default(type="button", data-dismiss="modal")
+                | Submit
+          
+          
+       
           
 

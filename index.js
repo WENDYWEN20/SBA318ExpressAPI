@@ -34,6 +34,7 @@ app.get('/download', (req,res)=>{
     res.download('./public/imagePug.jpg')})
 
 app.get('/users',  (req, res) =>{
+    console.log(req)
       res.render('users.pug', {data:data[0]})})
 
 app.use("/users", UsersRouter);

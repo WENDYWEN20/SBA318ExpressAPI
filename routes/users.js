@@ -17,7 +17,7 @@ const data=[
                 },
         ]
 router.post('/', (req,res)=>{
-       console.log(req.body)
+       console.log(req.params)
        res.render('users.pug',{data: data[1]})
 
 })
