@@ -1,0 +1,1 @@
+use pug as html post only work through POSTman, post is not reflected from the frontend
