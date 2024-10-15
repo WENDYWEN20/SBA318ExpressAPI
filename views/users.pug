@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head 
+        title='USERS'
+        link(rel="stylesheet", href="style.css")
+        body 
+        h1='Users'
+   
+        p='we have the best services'
+    h2 Username: #{data.username}
+    hr
+    h2  Email: #{data.emailaddress} 
+    hr
+
+    form(role='form' method='POST' action='')
+              div.form-group
+                label(for='name') Name:
+                input#name.form-control(type='text', placeholder='name' name='name')
+              div.form-group
+                label(for='email') Email:
+                input#email.form-control(type='email', placeholder='name@email.com' name='email')
+              button.btn.btn-primary(type="submit") Change
+          
+
